@@ -1,0 +1,22 @@
+{
+  "name": "specbee",
+  "version": "1.0.0",
+  "description": "Specbee Advertisement page",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "3.9.0",
+    "gulp-sass": "^4.0.2",
+    "swiper": "^5.2.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
