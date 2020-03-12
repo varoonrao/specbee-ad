@@ -1,3 +1,40 @@
-body {
-  border: none;
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+body,
+h2 {
+  font-family: "lato";
+  margin: auto;
+}
+section {
+  max-width: 1260px;
+  margin: auto;
+}
+
+.dm-footer_form {
+  background-color: #398dd6;
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  h2,
+  p {
+    color: white;
+  }
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .dm-footer_form-left,
+  .dm-footer_form-right {
+    max-width: 500px;
+    margin: auto;
+  }
+  .dm-footer_form-right {
+    label {
+      display: block;
+      color: white;
+    }
+  }
 }
