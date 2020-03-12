@@ -1,6 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 html {
   scroll-behavior: smooth;
+}
+body,
+h2 {
+  font-family: "lato";
+  margin: auto;
+}
+section {
+  max-width: 1260px;
+  margin: auto;
+}
+@mixin dm-cta-button {
+  background-color: rgb(240, 88, 28);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:after {
+    content: "\0";
+  }
+}
+.dm-footer_form {
+  background-color: #398dd6;
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  h2,
+  p {
+    color: white;
+  }
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .dm-footer_form-left,
+  .dm-footer_form-right {
+    max-width: 500px;
+    margin: auto;
+  }
+  .dm-footer_form-right {
+    label {
+      display: block;
+      color: white;
+      padding: 5px 0;
+      font-size: 14px;
+    }
+    input,
+    textarea {
+      width: 350px;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    input {
+      height: 30px;
+    }
+    button {
+      @include dm-cta-button;
+      display: block;
+    }
+  }
 }
 .dm-wrapper {
   width: 1250px;
@@ -32,7 +99,7 @@ html {
       text-decoration: none;
       color: white;
       border: none;
-      background: red;;
+      background: red;
     }
   }
   .dm-testimonial {
@@ -54,7 +121,7 @@ html {
         padding: 40px;
         transition: 0.5s;
         border-radius: 20px;
-        box-shadow: 1px 11px 24px rgba(0,0,0,0.2);
+        box-shadow: 1px 11px 24px rgba(0, 0, 0, 0.2);
         p {
           width: unset;
           padding: 0;
@@ -76,7 +143,7 @@ html {
           }
         }
         &:hover {
-          transition: 0.5s ;
+          transition: 0.5s;
           color: white;
           background-color: #0092d0;
         }
