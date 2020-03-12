@@ -6,11 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Specbee</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="node_modules/swiper/css/swiper.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="dm-wrapper">
-      <section class="dm-banner"></section>
-      <section class="dm-testimonial"></section>
+      <section class="dm-banner">
+        <div class="dm-bannerlogo">
+          <img src="../specbee-ad/assets/Specbee logo blue.svg" alt="" />
+        </div>
+        <p>
+          <span>A website</span> that increased sales for great southern homes
+          making them the <span>#1 builder in SC An application</span>That
+          enables <span>>200,000 table bookings/month</span>for Barbeque
+          Nation<span>posrtal</span>that drive
+          <span>massive engagements</span>at large enterprises such as
+          <span>Ericcson,Scannia and others</span>
+        </p>
+        <p>
+          We Build result driven websites.Find out how we can transform your
+          business
+        </p>
+        <a href="#down">Talk to us</a>
+      </section>
+
+      <section class="dm-testimonial swiper-container" id="down">
+        <p>Become one of our satisfied clients</p>
+        <div class="dm-testimonial-blocks swiper-wrapper">
+          <div class="dm-testimonial-block swiper-slide">
+            <p>The Specbee team is a reliable partner for Drupal development</p>
+            <p>MELVYN</p>
+            <p>Web merketing [24]7.ai</p>
+          </div>
+          <div class="dm-testimonial-block swiper-slide">
+            <p>
+              Specbee looked at our needs & delivered both what we wanted and
+              what we needed.
+            </p>
+            <p>BILL EARLE</p>
+            <p>Director of Strategic market,Great Southern</p>
+          </div>
+          <div class="dm-testimonial-block swiper-slide">
+            <p>
+              They're conscientoius,proficient, and very effective in getting
+              the work done.
+            </p>
+            <p>MICHAEL CAMASTRA</p>
+            <p>Owner, Sunrise Vacation Home Rentals</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
       <section class="dm-footer_form" id="footer-section">
         <div class="dm-footer_form-left">
           <h2 class="dm-footer_heading">We Want to Hear from You</h2>
@@ -34,5 +83,7 @@
         </div>
       </section>
     </div>
+    <script src="node_modules/swiper/js/swiper.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
